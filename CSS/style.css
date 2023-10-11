@@ -226,6 +226,7 @@ p {
 .team-slide {
     margin: 13px;
     max-width: 100%;
+    min-height: 100%;
     align-items: center;
     border-radius: 10px;
     background: #FFFBFB;
@@ -377,6 +378,9 @@ footer {
     font-size: 20px;
     color: black;
 }
+.site-link ul {
+    padding-left: 0px;
+}
 
 
 /*------------------------------
@@ -405,7 +409,9 @@ footer {
         width: 0.5em;
         height: 0.5em;
     }
-
+    .slide{
+        margin: 20px;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */

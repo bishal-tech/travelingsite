@@ -42,6 +42,16 @@ jQuery(document).ready(function () {
             slidesToShow: 1,
           },
         },
+        {
+          breakpoint: 479,
+          settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: "0px",
+            slidesToShow: 1,
+            slidesToShow: 1,
+          },
+        },
       ],
     });
 
