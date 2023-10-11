@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+    <link rel="stylesheet" href="/CSS/cardealer.css">
+</head>
+
+<body>
+    <!-- <header class="bg-dark">
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><span>Navbar</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Login</a>
+                            </li>
+
+                            <button class="btn cta-btn" type="submit">For Business</button>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </header> -->
+
+    <section class="car-dealer">
+        <div class="container py-5">
+            <div class="row ">
+                <div class="col-md-12 col-sm-12">
+                    <div class="headline">
+                        <h1>Best in Car Dealer </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------ 
+         Filter section start 
+    ------------------------------------------->
+    <section class="filter-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="selact-filter">
+                        <div class="filter-sec filter">
+                            <h4>Filter</h4>
+                        </div>
+                        <div class="filter-sec py-4">
+                            <h5>Status</h5>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Verified</label> <br>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Claimed</label>
+                        </div>
+                        <div class="filter-sec ">
+                            <h5>Rating</h5>
+                            <input type="checkbox" name="" id="">
+                            <label for="">Any</label> <br>
+                            <input type="checkbox" name="" id="">
+                            <label for="">2-3<i class="fa-solid fa-star"></i></label> <br>
+                            <input type="checkbox" name="" id="">
+                            <label for="">4-5<i class="fa-solid fa-star"></i></label> <br>
+                            <input type="checkbox" name="" id="">
+                            <label for="">5<i class="fa-solid fa-star"></i></label>
+                        </div>
+                        <div class="location py-4">
+                            <h5>Location</h5>
+                            <input class="form-control" type="text" placeholder="United States"
+                                aria-label="default input example">
+                            <br>
+                            <input class="form-control" type="text" placeholder="Zip Code"
+                                aria-label="default input example">
+
+                        </div>
+                    </div>
+                    <!-- related categories down bellow -->
+                    <div class="related-categories mt-5">
+                        <div class="fil-text d-flex gap-3">
+                            <h4>Related Categories</h4>
+                            <p>Show all</p>
+                        </div>
+                        <div class="fil-categori py-4">
+                            <p><a href="#">BMW Car Dealer</a></p>
+                            <p><a href="#">BMW Car Dealer</a></p>
+                            <p><a href="#">BMW Car Dealer</a></p>
+                            <p><a href="#">BMW Car Dealer</a></p>
+                            <p><a href="#">BMW Car Dealer</a></p>
+                            <p><a href="#">BMW Car Dealer</a></p>
+                            <p><a href="#">BMW Car Dealer</a></p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Search result down bellow -->
+                <div class="col-md-8 col-sm-12">
+                    <div class="dropdown">
+                        <button class="btn cta-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort by: Recomended
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Most Recomended</a></li>
+                            <li><a class="dropdown-item" href="#">Most Propuler</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="search-categori">
+
+                        <div class="filter-img">
+                            <img src="/Img/shuroom.jpg" alt="">
+                            <div class="div-1">
+                                <h5>Excutied Motor Limited</h5>
+                                <div class="popularity-icon">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <p class="location">Austin, United States</p>
+                                <p class="location">Trust Score-5 | 111,120 reviews</p>
+
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-envelope"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+                        <div class="see-btn">
+                            <button class="cta-btn-1 btn" type="submit"> <a href="#">View Details</a> </button>
+                        </div>
+                    </div>
+                    <div class="search-categori">
+
+                        <div class="filter-img">
+                            <img src="/Img/shuroom.jpg" alt="">
+                            <div class="div-1">
+                                <h5>Excutied Motor Limited</h5>
+                                <div class="popularity-icon">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <p class="location">Austin, United States</p>
+                                <p class="location">Trust Score-5 | 111,120 reviews</p>
+
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-envelope"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+                        <div class="see-btn">
+                            <button class="cta-btn-1 btn" type="submit"> <a href="#">View Details</a> </button>
+                        </div>
+                    </div>
+                    <div class="search-categori">
+
+                        <div class="filter-img">
+                            <img src="/Img/shuroom.jpg" alt="">
+                            <div class="div-1">
+                                <h5>Excutied Motor Limited</h5>
+                                <div class="popularity-icon">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <p class="location">Austin, United States</p>
+                                <p class="location">Trust Score-5 | 111,120 reviews</p>
+
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-envelope"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+                        <div class="see-btn">
+                            <button class="cta-btn-1 btn" type="submit"> <a href="#">View Details</a> </button>
+                        </div>
+                    </div>
+                    <div class="search-categori">
+
+                        <div class="filter-img">
+                            <img src="/Img/shuroom.jpg" alt="">
+                            <div class="div-1">
+                                <h5>Excutied Motor Limited</h5>
+                                <div class="popularity-icon">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <p class="location">Austin, United States</p>
+                                <p class="location">Trust Score-5 | 111,120 reviews</p>
+
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-envelope"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+                        <div class="see-btn">
+                            <button class="cta-btn-1 btn" type="submit"> <a href="#">View Details</a> </button>
+                        </div>
+                    </div>
+                    <div class="search-categori">
+
+                        <div class="filter-img">
+                            <img src="/Img/shuroom.jpg" alt="">
+                            <div class="div-1">
+                                <h5>Excutied Motor Limited</h5>
+                                <div class="popularity-icon">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                                <p class="location">Austin, United States</p>
+                                <p class="location">Trust Score-5 | 111,120 reviews</p>
+
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-earth-americas"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-envelope"></i></a>
+                                <a class="p-1 links-site" href="#"><i class="fa-solid fa-phone"></i></a>
+                            </div>
+                        </div>
+                        <div class="see-btn">
+                            <button class="cta-btn-1 btn" type="submit"> <a href="#">View Details</a> </button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</body>
+
+</html>

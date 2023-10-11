@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* ------------------------------------
+     custom class for section padding 
+---------------------------------------*/
+section {
+    padding: 70px 0px;
+}
+
+
+/* ------------------------------------
+     nav section start 
+---------------------------------------*/
+
+span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.active {
+    border-bottom: 1px solid rgb(247, 94, 29);
+    width: fit-content;
+}
+
+li a:hover {
+    border-bottom: 1px solid rgb(247, 94, 29);
+    width: fit-content;
+}
+
+.cta-btn {
+    background-color: rgb(49, 8, 254);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 2px 0px rgba(219, 217, 217, 0.93);
+}
+
+/* ------------------------------------
+     Hero section start 
+---------------------------------------*/
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../Img/bannerpic.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.banner-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-width: 650px;
+    border-radius: 50px;
+    margin-top: 20px;
+    padding: 10px 30px;
+    gap: 50px;
+}
+
+.banner-search a {
+    text-decoration: none;
+    color: gray;
+}
+
+.cta-btn-hr {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+/* ------------------------------------
+     Categori section start 
+---------------------------------------*/
+
+.title-btn {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.col {
+    background-color: white;
+}
+
+em {
+    color: #626262;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.cta-btn-co {
+    background-color: rgb(7, 31, 79);
+    color: white;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+
+.border {
+    border-radius: 5px;
+}
+
+.category {
+    display: flex;
+    padding: 25px 30px;
+    border: 1px solid rgb(244, 244, 244);
+    border-radius: 5px;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    align-items: center;
+    margin: 10px;
+}
+
+.category:hover {
+    box-shadow: 2px 2px 2px 2px #eceaead4;
+}
+
+.category p {
+    margin-bottom: 0;
+}
+
+
+/* ------------------------------------
+     About section start 
+---------------------------------------*/
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.about-pic {
+    padding-top: 10px;
+    text-align: end;
+}
+
+.about-pic img {
+    max-width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 0px 0px darkblue;
+}
+
+/* ------------------------------------
+     Reviews section start 
+---------------------------------------*/
+.bg-review {
+    background-image: url(../Img/serviceicon.png);
+    background-image: center;
+    background: #E1DFEE24;
+}
+
+.review-heading {
+    text-align: center;
+}
+
+.my-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 70px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+.client-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 2px;
+    /* background: #D2DCF8; */
+    /* transform: rotate(-90deg); */
+}
+
+.review-section {
+    display: flex;
+    align-items: center;
+}
+
+/* ------------------------------------
+     Community section start 
+---------------------------------------*/
+.bg-icon {
+    background-image: url(../Img/communityicon.png);
+    background-image: center;
+    background-color: #F4EFEF45;
+}
+
+.community-sec {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.team-membar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-slide {
+    margin: 13px;
+    max-width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    background: #FFFBFB;
+    box-shadow: 1px 1px 18px rgba(200, 187, 187, 0.34);
+}
+
+.team-slide img {
+    padding: 15px;
+    /* margin: 20px; */
+    /* width: 380px; */
+    align-items: center;
+    border-radius: 25px;
+}
+
+.name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 25%;
+    box-shadow: 2px 2px 6px 2px rgb(228, 226, 226);
+}
+
+.social-link-icon i {
+    font-size: 20px;
+    color: black;
+}
+
+
+/* ------------------------------------
+     Blog section start 
+---------------------------------------*/
+.blog-icon {
+    background-image: url(../Img/bolg.png);
+    background-image: center;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-title {
+    text-align: center;
+}
+
+.blog-date {
+    color: #626262;
+}
+
+.blog-headline {
+    color: rgb(0, 0, 255);
+}
+
+.blog-btn {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#slider {
+    display: flex;
+    justify-content: center;
+}
+
+.slide {
+    margin: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    max-width: 350px;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.slide img {
+    height: 200px;
+    width: 100%;
+}
+
+/* ------------------------------------
+     Footer section start 
+---------------------------------------*/
+footer {
+    background: linear-gradient(to bottom,
+            #000000,
+            #0D0940);
+}
+
+.social-media-page {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.site-link ul {
+    list-style: none;
+}
+
+.site-link a {
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+}
+
+.site-link h3 {
+    color: white;
+}
+
+/* footer links */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 25%;
+    box-shadow: -1px -1px 4px 1px rgba(207, 198, 198, 0.507);
+}
+
+.social-link-icon i {
+    font-size: 20px;
+    color: black;
+}
+
+
+/*------------------------------
+        meadia quries
+ -------------------------------*/
+
+@media (max-width: 575.98px) {
+    .banner-search {
+        font-size: 10px;
+    }
+
+    .cta-btn-hr {
+        padding: 5px 15px;
+    }
+
+    .cta-btn-co {
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+
+    .about-pic {
+        text-align: center;
+    }
+
+    .navbar-toggler-icon {
+        width: 0.5em;
+        height: 0.5em;
+    }
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .team-slide img {
+        width: 100%;
+    }
+
+    .review-section {
+        flex-direction: column;
+    }
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
