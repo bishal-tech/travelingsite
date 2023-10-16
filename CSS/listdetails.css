@@ -199,3 +199,9 @@ iframe {
 .login a {
     color: red;
 }
+
+
+.all-review h3{
+    margin-top: 10px;
+    font-size: medium;
+}
