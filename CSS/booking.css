@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+:root {
+
+    --text-color: gray;
+    --dark-bule :darkblue;
+}
+
+.booking-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+
+}
+
+.book-des {
+    text-transform: capitalize;
+}
+
+.book-img {
+    width: 350px;
+}
+
+.book-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* .book-des{
+    position: relative;
+} */
+.ractiong {
+    left: 343px;
+    top: 151px;
+    position: absolute;
+    text-align: center;
+    text-align: center;
+}
+
+.ractiong i {
+    /* color: yellow; */
+}
+
+.fa-star {
+    color: yellow;
+}
+
+.ractiong span {
+    color: gray;
+    text-transform: capitalize;
+}
+
+
+.hotel-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.room-info i {
+    color: gray;
+    text-transform: capitalize;
+}
+
+.reservation-box {
+    width: 410px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.checking-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reservation-box span {
+    color: gray;
+}
+
+.checking-box h5 {
+    color: var(--dark-bule)
+}
+
+.reservation-box h4{
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.reservation-box h6 {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.dark-bule-text{
+    color: var(--dark-bule);
+    font-size: 16px;
+    font-weight: 500;
+}
