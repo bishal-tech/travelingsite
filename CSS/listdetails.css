@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+/*---------------------- custom codes -------------------------------*/
+:root{
+    --main-background: #F0F0F0;
+    --box-background-color: #FFFFFF;
+    
+}
+
+
+
+
+.row {
+    justify-content: space-between;
+}
+
 .img-fluid {
     border-radius: 5px;
 }
@@ -200,11 +214,62 @@ iframe {
     color: red;
 }
 
-.prives-btn{
-    padding:10px 20px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    background-color:#0D0940;
-    color: #fff;
+
+
+
+/* 
+----------------------------right side codes here -----------------------------------*/
+span {
+    color: red;
+}
+
+.login-tap {
+    text-align: center;
+}
+
+.btn-2 {
+    margin-top: 10px;
+}
+
+.btn-2 button {
+    padding: 10px 100px;
+}
+
+/* 
+----------------------------All reviews codes here -----------------------------------*/
+.total-review h3 {
+    font-size: medium;
+}
+.reviews-sec{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.div-1{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 10px;
+}
+.div-1 a{
+    text-decoration: none;
+    font-size: 15px;
+    color: red;
+    
+}
+.review-imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews{
+    display: flex;
+    align-items: center;
+}
+
+.post-img img{
+    width: 100px;
+    height: 70px;
 }
