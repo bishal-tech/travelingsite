@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+
+
+.row {
+    justify-content: space-evenly;
+}
+
 .img-fluid {
     border-radius: 5px;
 }
@@ -201,7 +207,25 @@ iframe {
 }
 
 
-.all-review h3{
+.all-review h3 {
     margin-top: 10px;
     font-size: medium;
+}
+
+/* 
+----------------------------right side codes here -----------------------------------*/
+span {
+    color: red;
+}
+
+.login-tap {
+    text-align: center;
+}
+
+.btn-2 {
+    margin-top: 10px;
+}
+
+.btn-2 button {
+    padding: 10px 100px;
 }
