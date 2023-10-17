@@ -10,6 +10,15 @@
 .container {
     padding: 50px 0px;
 }
+:root{
+    --main-background: #F0F0F0;
+    --box-background-color: #FFFFFF;
+    --red-color: #F71D2A;
+    --box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
+    --btn-color: #0D0940;
+    --headline-text-color: #464646;
+    --paragraph-text-co: #626262;
+}
 
 
 
@@ -36,14 +45,14 @@
 
 /* Filter side start */
 .selact-filter {
-    background-color: #FFFFFF;
+    background-color: var(--box-background-color);
     max-width: 316px;
     padding: 30px;
     border-radius: 5px;
 }
 
 .filter {
-    color: #F71D2A;
+    color: var(--red-color);
 }
 
 .fil-text h4 {
@@ -94,9 +103,11 @@
     padding: 1em;
 }
 
-
+.div-1 h5{
+    color: var(--headline-text-color);
+}
 .div-1 p {
-    color: #C4BCBC;
+    color: var(--paragraph-text-co);
 }
 
 .location {
@@ -108,7 +119,7 @@
 }
 
 .cta-btn-1 {
-    background-color: rgb(7, 31, 79);
+    background-color: var(--btn-color);
     color: white;
     padding: 10px 40px;
     border-radius: 50px;

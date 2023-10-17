@@ -12,6 +12,15 @@ section {
     padding: 70px 0px;
 }
 
+:root {
+    --main-background: #F0F0F0;
+    --box-background-color: #FFFFFF;
+    --red-color: #F71D2A;
+    --box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
+    --btn-color: #0D0940;
+    --headline-text-color: #464646;
+    --paragraph-text-co: #626262;
+}
 
 /* ------------------------------------
      nav section start 
@@ -100,9 +109,11 @@ em {
 h3 {
     font-weight: bold;
 }
-
+p{
+    color: var(--paragraph-text-co);
+}
 .cta-btn-co {
-    background-color: rgb(7, 31, 79);
+    background-color: var(--btn-color);
     color: white;
     padding: 10px 50px;
     border-radius: 50px;
