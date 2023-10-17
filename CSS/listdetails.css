@@ -294,24 +294,31 @@ span {
     overflow: hidden;
     box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
 }
-
-.div-1 {
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+.content{
+    margin-bottom: 10px;
 }
 
-.div-1 p {
-    max-width: 515px;
+#ch{
+    display: none;
+}
+#ch:checked ~ .more-text {
+    display: block;
 }
 
-#btn {
-    margin-top: -45px;
+#ch:checked ~ label {
+    display: none;
+}
+
+.more-text{
+    display: none;
+}
+label {
+    display: inline-block;
     border: none;
     color: var(--red-color);
-    float: right;
+    float: inline-end;
     background-color: var(--box-background-color);
+    cursor: pointer;
 }
 
 .review-imgs {
@@ -340,4 +347,5 @@ span {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    cursor: pointer;
 }
