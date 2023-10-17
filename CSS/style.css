@@ -109,14 +109,20 @@ em {
 h3 {
     font-weight: bold;
 }
-p{
+
+p {
     color: var(--paragraph-text-co);
 }
+
 .cta-btn-co {
     background-color: var(--btn-color);
     color: white;
     padding: 10px 50px;
     border-radius: 50px;
+}
+
+.cta-btn-co:hover {
+    color: yellow;
 }
 
 .border {
@@ -276,7 +282,14 @@ p {
     height: 40px;
     background-color: white;
     border-radius: 25%;
-    box-shadow: 2px 2px 6px 2px rgb(228, 226, 226);
+    /* box-shadow: 2px 2px 6px 2px rgba(244, 242, 242, 0.764); */
+}
+.social-link:hover{
+    box-shadow: var(--box-shadow);
+    background-color: rgb(29, 28, 28);
+}
+.social-link:hover i{
+    color: yellow;
 }
 
 .social-link-icon i {
@@ -387,9 +400,13 @@ footer {
     height: 40px;
     background-color: white;
     border-radius: 25%;
-    box-shadow: -1px -1px 4px 1px rgba(207, 198, 198, 0.507);
+    /* box-shadow: -1px -1px 4px 1px rgba(207, 198, 198, 0.507); */
 }
 
+.social-link-footer:hover{
+    background-color: #000000;
+    box-shadow: -1px -1px 4px 1px rgba(207, 198, 198, 0.507);
+}
 .social-link-icon i {
     font-size: 20px;
     color: black;
@@ -398,8 +415,12 @@ footer {
 .site-link ul {
     padding-left: 0px;
 }
-
-
+.social-link-footer:hover i{
+    color: yellow;
+}
+.social-link-icon i:hover{
+    color: yellow;
+}
 /*------------------------------
         meadia quries
  -------------------------------*/

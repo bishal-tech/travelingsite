@@ -149,11 +149,3 @@ $('#banner-slider').slick({
   adaptiveHeight: true,
 });
 
-//------litingsite Review sec js------///
-// $(".invisible-content").hide();
-// $(document).on('click',"#btn",function(){
-//   var moreLessbutton=$(".invisible-content").is(":visible")?'Read More':'Read Less';
-//   $(this).text(moreLessbutton);
-//   $(this).parent(".reviews-sec").find(".invisible-content").toggle();
-//   $(this).parent(".reviews-sec").find(".visible-content").toggle();
-// });
