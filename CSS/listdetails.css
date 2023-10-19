@@ -22,7 +22,7 @@
     justify-content: space-between;
 }
 
-.imgslider{
+.imgslider {
     width: 100%;
     height: 520px;
     padding-left: 10%;
@@ -32,19 +32,24 @@
     box-shadow: var(--box-shadow);
     animation: changeImage 20s linear infinite;
 }
+
 @keyframes changeImage {
     0% {
         background-image: url(../Img/bannerpic.jpg);
     }
+
     25% {
         background-image: url(../Img/officework-1.jpg);
     }
+
     50% {
         background-image: url(../Img/officework2.jpg);
     }
+
     75% {
         background-image: url(../Img/officework3.jpg);
     }
+
     100% {
         background-image: url(../Img/officework4.jpg);
     }
@@ -294,33 +299,54 @@ span {
     overflow: hidden;
     box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
 }
-.content{
-    margin-bottom: 10px;
+
+.content p, .more-text p{
+   max-width: 500px;
+   text-align: justify; 
 }
 
-#ch{
-    display: none;
-}
-#ch:checked ~ .more-text {
-    display: block;
-}
-
-#ch:checked ~ label {
+#check,
+#ch,
+#ch-1,
+#ch-2 {
     display: none;
 }
 
-.more-text{
+.more-text {
     display: none;
 }
+
 label {
     display: inline-block;
-    border: none;
-    color: var(--red-color);
-    float: inline-end;
-    background-color: var(--box-background-color);
+    /* float: right; */
+    color: red;
     cursor: pointer;
 }
 
+#check:checked~.more-text,
+#ch:checked~.more-text,
+#ch-1:checked~.more-text,
+#ch-2:checked~.more-text {
+    display: block;
+}
+
+#check:checked~label,
+#ch:checked~label,
+#ch-1:checked~label,
+#ch-2:checked~label {
+    visibility: hidden;
+}
+
+#check:checked~label::after,
+#ch:checked~label::after,
+#ch-1:checked~label::after,
+#ch-2:checked~label::after {
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+}
+
+/* imgs------------------ */
 .review-imgs {
     display: flex;
     justify-content: space-between;
@@ -336,14 +362,17 @@ label {
     width: 100px;
     height: 70px;
 }
-.last-img img{
+
+.last-img img {
     color: #F71D2A;
 }
-.name-location{
+
+.name-location {
     display: flex;
     justify-content: space-between;
 }
-.like-dislike{
+
+.like-dislike {
     display: flex;
     justify-content: space-between;
     gap: 30px;
