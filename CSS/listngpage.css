@@ -11,17 +11,73 @@
     padding: 50px 0px;
 }
 
+:root {
+    --main-background: #F0F0F0;
+    --box-background-color: #FFFFFF;
+    --red-color: #F71D2A;
+    --box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
+    --btn-color: #0D0940;
+    --headline-text-color: #464646;
+    --paragraph-text-co: #626262;
+}
+
 
 
 /* ------------------------------------
+     Header class start
+---------------------------------------*/
+.fixed-top {
+    position: fixed;
+    top: -48px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.logo-name {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+.nav-link {
+    color: white;
+}
+
+.active {
+    border-bottom: 1px solid rgb(247, 94, 29);
+    width: fit-content;
+}
+
+li a:hover {
+    border-bottom: 1px solid rgb(247, 94, 29);
+    width: fit-content;
+}
+
+.cta-btn-header {
+    background-color: var(--red-color);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 2px 0px rgba(255, 255, 255, 25%);
+}
+/* .navbar {
+    background: linear-gradient(to bottom,
+            #0d0940e0,
+            #00000087);
+} */
+/* ------------------------------------
      Filter class start
 ---------------------------------------*/
+
+
 .filter-bg {
     background: #F0F0F0;
 }
 
 .car-dealer {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(/Img/bannercardealer.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../Img/bannercardealer.jpg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -36,14 +92,14 @@
 
 /* Filter side start */
 .selact-filter {
-    background-color: #FFFFFF;
+    background-color: var(--box-background-color);
     max-width: 316px;
     padding: 30px;
     border-radius: 5px;
 }
 
 .filter {
-    color: #F71D2A;
+    color: var(--red-color);
 }
 
 .fil-text h4 {
@@ -94,9 +150,12 @@
     padding: 1em;
 }
 
+.div-1 h5 {
+    color: var(--headline-text-color);
+}
 
 .div-1 p {
-    color: #C4BCBC;
+    color: var(--paragraph-text-co);
 }
 
 .location {
@@ -108,7 +167,7 @@
 }
 
 .cta-btn-1 {
-    background-color: rgb(7, 31, 79);
+    background-color: var(--btn-color);
     color: white;
     padding: 10px 40px;
     border-radius: 50px;
@@ -138,6 +197,75 @@
 .cta-btn {
     background-color: white;
     box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
+}
+
+/* ------------------------------------
+     Footer section start 
+---------------------------------------*/
+footer {
+    background: linear-gradient(to bottom,
+            #000000,
+            #0D0940);
+}
+
+.social-media-page {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.site-link ul {
+    list-style: none;
+}
+
+.site-link a {
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+}
+
+.site-link h3 {
+    color: white;
+}
+
+/* footer links */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 25%;
+    /* box-shadow: -1px -1px 4px 1px rgba(207, 198, 198, 0.507); */
+}
+
+.social-link-footer:hover {
+    background-color: #000000;
+    box-shadow: -1px -1px 4px 1px rgba(207, 198, 198, 0.507);
+}
+
+.social-link-icon i {
+    font-size: 20px;
+    color: black;
+}
+
+.site-link ul {
+    padding-left: 0px;
+}
+
+.social-link-footer:hover i {
+    color: yellow;
+}
+
+.social-link-icon i:hover {
+    color: yellow;
 }
 
 /* // X-Small devices (portrait phones, less than 576px) */
@@ -191,16 +319,19 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .selact-filter{
+    .selact-filter {
         width: 230px;
     }
-    .related-categories{
+
+    .related-categories {
         width: 230px;
     }
+
     .row {
         justify-content: space-between;
     }
-    .cta-btn-1{
+
+    .cta-btn-1 {
         display: none;
     }
 }
