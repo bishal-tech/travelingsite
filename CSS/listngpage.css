@@ -10,7 +10,8 @@
 .container {
     padding: 50px 0px;
 }
-:root{
+
+:root {
     --main-background: #F0F0F0;
     --box-background-color: #FFFFFF;
     --red-color: #F71D2A;
@@ -23,8 +24,54 @@
 
 
 /* ------------------------------------
+     Header class start
+---------------------------------------*/
+.fixed-top {
+    position: fixed;
+    top: -48px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.logo-name {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-nav{
+    gap: 20px;
+}
+.nav-link {
+    color: white;
+}
+
+.active {
+    border-bottom: 1px solid rgb(247, 94, 29);
+    width: fit-content;
+}
+
+li a:hover {
+    border-bottom: 1px solid rgb(247, 94, 29);
+    width: fit-content;
+}
+
+.cta-btn-header {
+    background-color: var(--red-color);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 2px 0px rgba(255, 255, 255, 25%);
+}
+/* .navbar {
+    background: linear-gradient(to bottom,
+            #0d0940e0,
+            #00000087);
+} */
+/* ------------------------------------
      Filter class start
 ---------------------------------------*/
+
+
 .filter-bg {
     background: #F0F0F0;
 }
@@ -103,9 +150,10 @@
     padding: 1em;
 }
 
-.div-1 h5{
+.div-1 h5 {
     color: var(--headline-text-color);
 }
+
 .div-1 p {
     color: var(--paragraph-text-co);
 }
@@ -198,10 +246,11 @@ footer {
     /* box-shadow: -1px -1px 4px 1px rgba(207, 198, 198, 0.507); */
 }
 
-.social-link-footer:hover{
+.social-link-footer:hover {
     background-color: #000000;
     box-shadow: -1px -1px 4px 1px rgba(207, 198, 198, 0.507);
 }
+
 .social-link-icon i {
     font-size: 20px;
     color: black;
@@ -210,10 +259,12 @@ footer {
 .site-link ul {
     padding-left: 0px;
 }
-.social-link-footer:hover i{
+
+.social-link-footer:hover i {
     color: yellow;
 }
-.social-link-icon i:hover{
+
+.social-link-icon i:hover {
     color: yellow;
 }
 
@@ -268,16 +319,19 @@ footer {
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    .selact-filter{
+    .selact-filter {
         width: 230px;
     }
-    .related-categories{
+
+    .related-categories {
         width: 230px;
     }
+
     .row {
         justify-content: space-between;
     }
-    .cta-btn-1{
+
+    .cta-btn-1 {
         display: none;
     }
 }

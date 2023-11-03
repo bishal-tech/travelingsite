@@ -24,12 +24,33 @@
 }
 
 /*------------------------------ Header sec codes here----------------- */
+.navbar {
+    background: linear-gradient(to bottom,
+            #0d0940e0,
+            #00000087);
+}
+
 .logo-name {
     color: var(--text-white);
     font-weight: bold;
     font-size: 30px;
 }
 
+.nav-link {
+    color: white;
+}
+
+.cta-btn-header {
+    background-color: var(--red-color);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 2px 0px rgba(255, 255, 255, 25%);
+}
+
+.nav-item .active {
+    border-bottom: 1px solid rgb(247, 94, 29);
+    width: fit-content;
+}
 
 li a:hover {
     border-bottom: 1px solid rgb(247, 94, 29);
@@ -138,29 +159,34 @@ p {
     color: black;
 }
 
-.cta-btn-1 {
+.cta-btn-1,
+.cta-btn-3 {
     background-color: rgb(7, 31, 79);
     color: white;
     padding: 5px 20px;
     border-radius: 50px;
 }
-
-.cta-btn-1 a {
+.cta-btn-1 a,
+.cta-btn-3 a {
     text-decoration: none;
     color: white;
 }
 
-.cta-btn-1:hover {
+.cta-btn-1:hover, .cta-btn-3:hover {
     background-color: black;
     transition: all 0.4s linear;
 }
 
-.cta-btn-1 a:hover {
+.cta-btn-1 a:hover, .cta-btn-3 a:hover {
     color: yellow;
     transition: all 0.4s linear;
 }
 
-
+.cta-btn-3{
+    margin: 0% auto;
+    align-items: center;
+    margin-bottom: 15px;
+}
 /*--------- Motors details------------ */
 .about-details {
     background-color: white;
