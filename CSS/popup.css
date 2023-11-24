@@ -1,0 +1,158 @@
+:root {
+    --main-background: #F0F0F0;
+    --box-background-color: #FFFFFF;
+    --text-white: white;
+    --red-color: #F71D2A;
+    --box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
+    --btn-color: #0D0940;
+    --hover-yellow-co: yellow;
+    --headline-text-color: #464646;
+    --paragraph-text-co: #626262;
+    --review-star-color: #C4BCBC;
+}
+
+body {
+    /* background-color:#292B2C;*/
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+}
+
+.modal-bg {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.button {
+    position: relative;
+    font-size: 17px;
+    background: #DA244F;
+    border-radius: 3px;
+    border-bottom: 3px solid #B5002A;
+    padding: 7px 15px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    margin: 50px 70px;
+    -webkit-transition: margin 100ms;
+    -moz-transition: margin 100ms;
+    transition: margin 100ms;
+}
+
+.button:active {
+    margin: 53px 70px;
+}
+
+.button:hover {
+    background: #C40532;
+}
+
+form {
+    display: block;
+    margin-top: 70px;
+}
+
+
+input:focus {
+    outline: 0;
+}
+
+input {
+    width: 240px;
+    padding: 10px;
+    border: none;
+    border-radius: 1px;
+}
+
+/* .popup{
+       float: right;
+       padding: 8px 12px;
+       margin-top: 15px;
+       background: #5DC3A7;
+       border: none;
+       color: #fff;
+       border-bottom: 2px solid #23AA84;
+       border-radius: 1px;
+       cursor: pointer;
+   } */
+/* button:active {
+    margin: 18px 10px;
+} */
+
+/* button:hover{
+       background-color: #0FC491;
+   } */
+#forgot-link {
+    font-size: 14px;
+    line-height: 45px;
+    color: var(--review-star-color);
+    display: inline-block;
+}
+
+/* #forgot-link:hover {
+    color: var(--hover-yellow-co);
+} */
+
+#modal {
+    position: absolute;
+    background-color: var(--box-background-color);
+    top: 39%;
+    left: 50%;
+    z-index: 101;
+    border-radius: 3px;
+    width: 340px;
+    height: 530px;
+    margin-top: -130px;
+    margin-left: -170px;
+    box-shadow: var(--box-shadow);
+}
+
+#modal span {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    /* padding: 10px; */
+    float: left;
+    color: var(--btn-color);
+}
+
+.signup-icon {
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+
+input[type="textbox"],
+input[type="number"],
+input[type="email"],
+input[type="password"]{
+    border: 1px solid var(--review-star-color);
+    border-radius: 50px;
+    padding-left: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.captcha{
+    margin-left: 20px;
+}
+
+
+#close {
+    float: right;
+    color: var(--headline-text-color);
+    margin-top: -4px;
+    font-family: serif;
+    font-size: 20px;
+}
+
+#close:hover {
+    color: gray;
+}

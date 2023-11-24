@@ -11,6 +11,7 @@
     --text-white: white;
     --red-color: #F71D2A;
     --box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
+    --navhover-yellow-color: yellow;
     --btn-color: #0D0940;
     --headline-text-color: #464646;
     --paragraph-text-co: #626262;
@@ -40,7 +41,7 @@
     color: white;
 }
 
-.cta-btn-header {
+.nav-btn {
     background-color: var(--red-color);
     color: white;
     font-weight: bold;
@@ -52,8 +53,9 @@
     width: fit-content;
 }
 
-li a:hover {
+.nav-item a:hover {
     border-bottom: 1px solid rgb(247, 94, 29);
+    color: var(--navhover-yellow-color);
     width: fit-content;
 }
 
@@ -299,6 +301,7 @@ span {
 
 .login-tap {
     text-align: center;
+    /* height: 151px; */
 }
 
 .btn-2 {
@@ -308,7 +311,9 @@ span {
 .btn-2 button {
     padding: 10px 100px;
 }
-
+.cta-btn-1:hover a{
+    color: yellow;
+}
 /* 
 ----------------------------All reviews codes here -----------------------------------*/
 .total-review h3 {

@@ -5,81 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Writting</title>
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-        }
 
-        /*---------------------- custom codes -------------------------------*/
-        :root {
-            --main-background: #F0F0F0;
-            --box-background-color: #FFFFFF;
-            --text-white: white;
-            --red-color: #F71D2A;
-            --box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
-            --btn-color: #0D0940;
-            --headline-text-color: #464646;
-            --paragraph-text-co: #626262;
-        }
+    <!-- Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        #review-sec {
-            width: 700px;
-            height: 450px;
-            /* background-color: #F71D2A; */
-            border: 1px solid red;
-            margin: auto;
-            margin-top: 100px;
-        }
-
-        h5 {
-            margin-top: 20px;
-            background-color: var(--box-background-color);
-            color: var(--headline-text-color);
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .pic {
-            display: flex;
-            gap: 10px;
-        }
-
-        .profile img {
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            margin-left: 20px;
-        }
-    </style>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="vendors/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/slick-slider.css" />
+    <link rel="stylesheet" href="CSS/reviewpage.css">
 </head>
 
 <body>
     <section id="review-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div>
-                        <h5>Executive Motors Limited</h5>
-                    </div>
-                    <div class="pic">
-                        <div class="profile">
-                            <img src="./Img/pexels-elle-hughes-1680172.jpg" class="img-fluid" alt="" srcset="">
 
-                        </div>
-                        <div>
-                            <h6>Rahul Roy</h6>
-                        </div>
+        <div class="container">
+            <div class="reviewbody">
+                <h5>Executive Motors Limited</h5>
+
+                <div class="pic">
+                    <div class="profile">
+                        <img src="./Img/pexels-elle-hughes-1680172.jpg" class="img-fluid" alt="" srcset="">
+
+                    </div>
+                    <div class="public-name">
+                        <h4>Rahul Roy</h4>
+                        <p>Posting publicly</p>
                     </div>
                 </div>
+
+                <div class="popularity-icon">
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                    <i class="fa-solid fa-star text-black"></i>
+                </div>
+
+                <div class="form-outline text-box">
+                    <textarea class="form-control" id="textAreaExample2"
+                        placeholder="Share details of your own experience of this place" rows="6"></textarea>
+                </div>
+                <div class="upload-btn-wrapper">
+
+                    <button class="btn add-pic">
+                        <i class="fa-solid fa-camera"></i>
+                        <p>Add Photos</p>
+                    </button>
+                    <div class="plus-icon"><i class="fa-solid fa-plus"></i></div>
+                    <input type="file" name="myfile" />
+                </div>
+
+                <button type="cancel" class="post">Post</button>
+                <button type="submit" class="cancel">Cancel</button>
             </div>
         </div>
-
-
-
-
     </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="vendors/bootstrap.bundle.min.js"></script>
+    <!-- inoicons js -->
+    <script src="./JS/inoicon.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/slick.min.js"></script>
+    <script src="./JS/script.js"></script>
 </body>
 
 </html>

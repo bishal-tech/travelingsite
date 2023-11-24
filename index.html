@@ -10,11 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="vendors/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/slick-slider.css" />
 
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
@@ -22,33 +20,33 @@
 <body>
 
     <header>
-            <nav class="navbar navbar-expand-lg bg-light fixed-top bg-transparent">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><span class="logo-name">Navbar</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Categories</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
-                            </li>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span class="logo-name">Navbar</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
 
-                            <button class="btn cta-btn" type="submit">For Business</button>
-                    </div>
+                        <button class="btn nav-btn" type="submit">For Business</button>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
 
     <!-- Hero Section Down Bellow -->
@@ -62,7 +60,7 @@
                     <div class="banner-search">
                         <a href="#">Location</a>
                         <a href="#">Company or Category</a>
-                        <button class="cta-btn-hr btn" type="submit">Search</button>
+                        <button class="hero-btn btn" type="submit">Search</button>
                     </div>
 
                 </div>
@@ -78,7 +76,7 @@
     <section class="bg-light">
 
         <div class="container ">
-            <div class="title-btn">
+            <div class="categori-btn">
                 <h3>Explore Categories</h3>
                 <button class="cta-btn-co btn" type="submit">View All</button>
             </div>
@@ -536,12 +534,9 @@
     </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./vendors/bootstrap.bundle.min.js"> </script>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/slick.min.js"></script>
     <script src="./JS/script.js"></script>
 </body>
 

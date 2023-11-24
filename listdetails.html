@@ -14,6 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="CSS/popup.css">
     <link rel="stylesheet" href="./CSS/listdetails.css">
 </head>
 
@@ -45,13 +46,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login</a>
                         </li>
-                        <button class="btn cta-btn-header" type="submit">For Business</button>
+                        <button class="btn nav-btn" type="submit">For Business</button>
                 </div>
             </div>
         </nav>
     </header>
 
-<!------------------- hero sec-----------------  -->
+    <!------------------- hero sec-----------------  -->
     <section>
         <div class="maindiv-hero">
             <div class="hero-sec">
@@ -118,10 +119,10 @@
                                 <p><a href="#">Dubai</a></p>
                             </div>
 
-                            <div class="see-btn">
-                                <button class="cta-btn-1 btn" type="submit"> <a href="bookingpage.html">Book Now</a>
-                                </button>
-                            </div>
+
+                            <button class="cta-btn-1 btn" type="submit"> <a href="bookingpage.html">Book Now</a>
+                            </button>
+
                         </div>
                     </div>
 
@@ -198,9 +199,38 @@
                             <p>Please <span>Sign Up</span> or <span class="">Login</span> to get more details </p>
                         </div>
                         <div class="see-btn btn-2">
-                            <button class="cta-btn-1 btn" type="submit"> <a href="#">Sign Up / Login</a>
+                            <button class="cta-btn-1 btn popup" type="submit"> <a href="#">Sign Up / Login</a>
                             </button>
                         </div>
+                        <div class="modal-bg">
+                            <div id="modal">
+                                <div class="signup-icon">
+                                    <span>Sign Up</span>
+                                    <a href="#close" id="close">&#215;</a>
+                                </div>
+                                <form>
+                                    <input id="username" name="username" type="textbox" placeholder="Username" required>
+                                    <input type="number" name="number" id="number" placeholder="Phone Number">
+                                    <input type="email" name="" id="" placeholder="Enter Your Gmail">
+
+                                    <input id="password" name="password" type="password" placeholder="Password"
+                                        required>
+                                    <div class="g-recaptcha captcha"
+                                        data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR">
+                                    </div>
+
+                                    <a id="forgot-link" href="#">Forgot password?</a>
+                                    <div class="btn-2">
+                                        <button class="cta-btn-1 btn" name="submit" id="submit" type="submit">Sign
+                                            in</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+
+
                     </div>
 
                 </div>
@@ -216,7 +246,7 @@
                             <h5>Write your review</h5>
                             <i class="fa-solid fa-pen"></i>
                         </div>
-                        <p>Please <a href="#">log in</a> to submit a review</p>
+                        <p>Please <a href="writingreview.html">log in</a> to submit a review</p>
                     </div>
                 </div>
             </div>
@@ -504,7 +534,7 @@
             </div>
         </div>
         <div class="see-btn d-flex">
-            <button class="cta-btn-3 btn" type="submit"> <a href="writingreview.html">See all</a>
+            <button class="cta-btn-3 btn" type="submit"> <a href="#">See all</a>
             </button>
         </div>
     </section>
@@ -587,17 +617,12 @@
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <script src="vendors/bootstrap.bundle.min.js"></script>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/slick.min.js"></script>
+    <script src="JS/popup.js"></script>
+    <!--you can put this line anywhere in the site-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="./js/script.js"></script>
 </body>
 
