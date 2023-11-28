@@ -141,13 +141,3 @@ jQuery(document).ready(function () {
 
 
 
-// $('#banner-slider').slick({
-//   dots: false,
-//   infinite: false,
-//   speed: 300,
-//   slidesToShow: 1,
-//   adaptiveHeight: true,
-// });
-
-
-

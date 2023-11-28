@@ -15,11 +15,26 @@
     --btn-color: #0D0940;
     --headline-text-color: #464646;
     --paragraph-text-co: #626262;
+    --review-star-color: #C4BCBC;
 }
 
+body {
+    background: #F0F0F0;
+}
 
-
-
+.cta-btn-1 {
+    background-color: rgb(7, 31, 79);
+    color: white;
+    padding: 6px 25px;
+    border-radius: 50px;
+}
+.cta-btn-1:hover{
+    color: var(--navhover-yellow-color);
+}
+.btn-2 {
+    margin-top: 20px;
+    padding: 10px 128px;
+}
 .row {
     justify-content: space-between;
 }
@@ -59,13 +74,6 @@
     width: fit-content;
 }
 
-.cta-btn {
-    background-color: rgb(49, 8, 254);
-    color: white;
-    font-weight: bold;
-    box-shadow: 0px 3px 2px 0px rgba(219, 217, 217, 0.93);
-}
-
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -95,9 +103,6 @@
     padding-bottom: 16px;
 }
 
-.filter-bg {
-    background: #F0F0F0;
-}
 
 .headline {
     background-color: #FFFFFF;
@@ -116,7 +121,7 @@ p {
     color: var(--paragraph-text-co);
 }
 
-/* rating code */
+/* Rating code--------------//// */
 .rating {
     background-color: #0D0940;
     color: white;
@@ -143,7 +148,7 @@ p {
     color: var(--paragraph-text-co);
 }
 
-/*------ dtils code------ */
+/*------ Details code///////////------ */
 .details {
     display: flex;
     align-items: center;
@@ -161,34 +166,30 @@ p {
     color: black;
 }
 
-.cta-btn-1,
-.cta-btn-3 {
-    background-color: rgb(7, 31, 79);
-    color: white;
-    padding: 5px 20px;
-    border-radius: 50px;
-}
 .cta-btn-1 a,
 .cta-btn-3 a {
     text-decoration: none;
     color: white;
 }
 
-.cta-btn-1:hover, .cta-btn-3:hover {
+.cta-btn-1:hover,
+.cta-btn-3:hover {
     background-color: black;
     transition: all 0.4s linear;
 }
 
-.cta-btn-1 a:hover, .cta-btn-3 a:hover {
+.cta-btn-1 a:hover,
+.cta-btn-3 a:hover {
     color: yellow;
     transition: all 0.4s linear;
 }
 
-.cta-btn-3{
+.cta-btn-3 {
     margin: 0% auto;
     align-items: center;
     margin-bottom: 15px;
 }
+
 /*--------- Motors details------------ */
 .about-details {
     background-color: white;
@@ -294,7 +295,7 @@ iframe {
 
 
 /* 
-----------------------------right side codes here -----------------------------------*/
+----------------------------\\\\\\Right side codes here//////// -----------------------------------*/
 span {
     color: var(--red-color);
 }
@@ -304,18 +305,51 @@ span {
     /* height: 151px; */
 }
 
-.btn-2 {
-    margin-top: 10px;
-}
-
-.btn-2 button {
-    padding: 10px 100px;
-}
-.cta-btn-1:hover a{
+.cta-btn-1:hover a {
     color: yellow;
 }
+
+/* ///PopUp Codes//------ */
+.modal-content {
+    width: 350px;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+button:hover p{
+    color: var(--navhover-yellow-color);
+}
+
+.modal-dialog {
+    justify-content: center;
+    display: flex;
+    margin: 1.75rem auto;
+}
+.login-link{
+    float: right;
+}
+.login-link a{
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--btn-color);
+    cursor: pointer;
+}
+.forgot_password{
+    margin-top: -10px;
+    text-decoration: none;
+    float: right;
+    color: var(--red-color);
+}
+
 /* 
-----------------------------All reviews codes here -----------------------------------*/
+----------------------------\\\\All reviews codes here/////-----------------------------------*/
 .total-review h3 {
     font-size: medium;
 }
