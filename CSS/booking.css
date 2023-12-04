@@ -7,50 +7,36 @@
 }
 
 :root {
-
-    --text-color: gray;
-    --dark-bule: darkblue;
+    --main-background: #F0F0F0;
+    --box-background-color: #FFFFFF;
+    --text-white: white;
+    /* --red-color: #F71D2A; */
+    --box-shadow: 1px 1px 9px rgba(200, 187, 187, 0.55);
+    --navhover-yellow-color: yellow;
     --btn-color: #0D0940;
+    --headline-text-color: #464646;
+    --paragraph-text-co: #626262;
+    --review-star-color: #C4BCBC;
 }
 
-.booking-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    background: #F0F0F0;
+}
+
+
+.maindiv {
+    padding: 16px;
+    border-radius: 10px;
+    background-color: var(--box-background-color);
+}
+
+.booking-model {
+    justify-content: space-between;
     gap: 15px;
-    position: relative;
-
 }
-
-.book-des {
-    text-transform: capitalize;
-}
-
-.book-img {
+.booking-model img {
+    border-radius: 5px;
     width: 350px;
-}
-
-.book-img img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* .book-des{
-    position: relative;
-} */
-
-
-.ractiong i {
-    /* color: yellow; */
-}
-
-.fa-star {
-    color: #FFCD40;
-}
-
-.ractiong span {
-    color: gray;
-    text-transform: capitalize;
 }
 
 
@@ -63,15 +49,7 @@
     width: 379px;
 }
 
-.room-info i {
-    color: gray;
-    text-transform: capitalize;
-}
-
-.box i {
-    color: gray;
-}
-
+/* ///Right Side Section Codes/////--- */
 .reservation-box {
     width: 410px;
     padding: 15px;
@@ -173,7 +151,7 @@
 
     .reservation-box {
         margin-top: 50px;
-         width: 250px;
+        width: 250px;
     }
 
 }

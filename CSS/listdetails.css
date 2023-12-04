@@ -28,13 +28,16 @@ body {
     padding: 6px 25px;
     border-radius: 50px;
 }
-.cta-btn-1:hover{
+
+.cta-btn-1:hover {
     color: var(--navhover-yellow-color);
 }
+
 .btn-2 {
     margin-top: 20px;
     padding: 10px 128px;
 }
+
 .row {
     justify-content: space-between;
 }
@@ -79,6 +82,10 @@ body {
 .navbar-toggler-icon:focus {
     outline: none !important;
     box-shadow: none !important;
+}
+
+.toggle-btn i {
+    color: var(--main-background);
 }
 
 /* ------------------down bellow css start-------------------- */
@@ -322,7 +329,7 @@ input {
     margin-bottom: 20px;
 }
 
-button:hover p{
+button:hover p {
     color: var(--navhover-yellow-color);
 }
 
@@ -331,17 +338,20 @@ button:hover p{
     display: flex;
     margin: 1.75rem auto;
 }
-.login-link{
+
+.login-link {
     float: right;
 }
-.login-link a{
+
+.login-link a {
     margin-right: 10px;
     font-weight: 500;
     font-size: 15px;
     color: var(--btn-color);
     cursor: pointer;
 }
-.forgot_password{
+
+.forgot_password {
     margin-top: -10px;
     text-decoration: none;
     float: right;

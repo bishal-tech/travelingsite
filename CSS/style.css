@@ -65,6 +65,17 @@ section {
             #00000087);
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.toggle-btn i {
+    color: var(--main-background);
+}
+
 /* ------------------------------------
      Hero section start 
 ---------------------------------------*/

@@ -22,7 +22,9 @@
     --paragraph-text-co: #626262;
 }
 
-
+body {
+    background-color: var(--main-background);
+}
 
 /* ------------------------------------
      Header class start
@@ -67,19 +69,28 @@
     box-shadow: 0px 3px 2px 0px rgba(255, 255, 255, 25%);
 }
 
-/* .navbar {
+.nav-background-co {
     background: linear-gradient(to bottom,
             #0d0940e0,
             #00000087);
-} */
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+.toggle-btn i {
+    color: var(--main-background);
+}
+
 /* ------------------------------------
      Filter class start
 ---------------------------------------*/
-
-
-.filter-bg {
-    background: #F0F0F0;
-}
 
 .car-dealer {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../Img/bannercardealer.jpg);
@@ -129,10 +140,11 @@
     border-radius: 5px;
 }
 
-.fil-categori{
+.fil-categori {
     display: flex;
     justify-content: space-between;
 }
+
 .fil-categori a {
     text-decoration: none;
     color: black;
@@ -186,9 +198,11 @@
     text-decoration: none;
     color: white;
 }
-
-.cta-btn-1:hover a {
+.cta-btn-1:hover{
     background-color: black;
+}
+.cta-btn-1:hover a {
+    /* background-color: black; */
     transition: all 0.4s linear;
     color: yellow;
 }
